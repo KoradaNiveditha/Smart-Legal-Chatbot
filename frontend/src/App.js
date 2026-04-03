@@ -8,6 +8,9 @@ function App() {
   const [history, setHistory] = useState([]);
   const chatEndRef = useRef(null);
 
+  // ✅ Backend URL from environment variable
+  const API_URL = process.env.REACT_APP_API_URL;
+
   const sendMessage = async () => {
     if (!message.trim()) return;
 
@@ -17,7 +20,7 @@ function App() {
     setHistory((prev) => [...prev, message]);
 
     try {
-      const res = await axios.post("https://smart-legal-chatbot-backend.onrender.com/chat", {
+      const res = await axios.post(`${API_URL}/chat`, {
         message,
       });
 
