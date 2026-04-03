@@ -1,0 +1,145 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6fb;
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #e6f0ff, #ffffff);
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  text-align: center;
+  color: #4b4bb7;
+}
+
+.clear-btn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background: #ffe6e6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.clear-btn:hover {
+  background: #ffcccc;
+}
+
+.history {
+  margin-top: 20px;
+}
+
+.history-item {
+  background: #f1f5ff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.history-item:hover {
+  background: #dde5ff;
+}
+
+/* Chat */
+.chat-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f9fbff;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Messages */
+.user-message {
+  align-self: flex-end;
+  background: #e6f7ff;
+  padding: 14px 18px;
+  border-radius: 18px;
+  max-width: 70%;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 16px 20px;
+  border-radius: 18px;
+  max-width: 75%;
+}
+
+/* Input */
+.input-area {
+  display: flex;
+  padding: 15px;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+.input-area button {
+  margin-left: 10px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+}
+
+/* Center Screen */
+.center-screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-input {
+  display: flex;
+  width: 60%;
+}
+
+.center-input input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 30px;
+}
+
+.center-input button {
+  margin-left: 10px;
+  padding: 14px 25px;
+  border-radius: 30px;
+  background: #6c63ff;
+  color: white;
+}
